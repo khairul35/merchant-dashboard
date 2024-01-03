@@ -1,0 +1,18 @@
+.menu {
+    padding: 20px 15px;
+    cursor: pointer;
+}
+
+.menu:hover {
+    color: #FF6666;
+    background-color: #D6D6D6;
+}
+
+.menu:hover svg path {
+  fill: #FF6666; /* Adjust the fill color */
+}
+
+.menuSelected {
+    color: #FF6666;
+    background-color: #D6D6D6;
+}

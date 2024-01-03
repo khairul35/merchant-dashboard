@@ -1,5 +1,10 @@
 {
   "/login/page": "app/login/page.js",
-  "/dashboard/page": "app/dashboard/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/home/page": "app/home/page.js",
+  "/agents/page": "app/agents/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/merchants/page": "app/merchants/page.js",
+  "/users/page": "app/users/page.js",
+  "/transactions/page": "app/transactions/page.js",
+  "/settings/page": "app/settings/page.js"
 }
