@@ -1,0 +1,25 @@
+/* index.module.css */
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Pushes button to the right */
+  align-items: center; /* Centers vertically */
+  background-color: #fff;
+  color: #000;
+  height: 77px;
+  border-bottom: 1px solid #7A7A7A; /* Example border style */
+}
+
+.logOutButton {
+  background-color: #CACACA;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-right: 10px;
+}
+
+.logOutButton:hover {
+  background-color: #7A7A7A;
+}

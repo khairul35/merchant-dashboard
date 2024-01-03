@@ -1,0 +1,10 @@
+.logOutButton {
+    background-color: #7A7A7A;
+    color: #fff !important;
+    border: none !important;
+    cursor: pointer;
+}
+
+.logOutButton:hover {
+    background-color: #6d6c6c;
+}

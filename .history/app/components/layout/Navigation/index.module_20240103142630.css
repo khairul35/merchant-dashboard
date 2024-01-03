@@ -1,0 +1,9 @@
+.menu {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.menu:hover {
+    color: #FF6666;
+    background-color: #D6D6D6;
+}
