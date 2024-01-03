@@ -1612,6 +1612,12 @@ html {
 .pb-5 {
   padding-bottom: 1.25rem;
 }
+.pt-10 {
+  padding-top: 2.5rem;
+}
+.pt-5 {
+  padding-top: 1.25rem;
+}
 .text-center {
   text-align: center;
 }
@@ -1651,6 +1657,9 @@ html {
 }
 .font-medium {
   font-weight: 500;
+}
+.font-bold {
+  font-weight: 700;
 }
 .italic {
   font-style: italic;

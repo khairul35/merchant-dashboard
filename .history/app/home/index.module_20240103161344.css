@@ -1,0 +1,5 @@
+.organizationOverviewCard {
+    height: 200px;
+    justify-content: center; /* Horizontally aligns items */
+    align-items: center; 
+}

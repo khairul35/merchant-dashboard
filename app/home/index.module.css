@@ -1,0 +1,7 @@
+.organizationOverviewCard {
+    height: 200px;
+    display: flex;
+    justify-content: center; /* Horizontally aligns items */
+    align-items: center;
+    flex-direction: column;
+}
