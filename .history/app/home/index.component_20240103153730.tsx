@@ -1,0 +1,16 @@
+import { HomeProps } from "./index.prop";
+
+const Component = (props: HomeProps) => {
+    const { name } = props;
+
+    return (
+        <div>
+            <div className="p-2">
+                <h2 className="font-semibold text-2xl">Hi { name }</h2>
+                <div className="divider"></div>
+            </div>
+        </div>
+    )
+};
+
+export default Component;
