@@ -1649,6 +1649,12 @@ html {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.text-\[8px\] {
+  font-size: 8px;
+}
+.text-\[10px\] {
+  font-size: 10px;
+}
 .font-semibold {
   font-weight: 600;
 }
