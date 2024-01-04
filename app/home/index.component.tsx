@@ -6,6 +6,10 @@ import AggregationWalletSummary from "./agrregation-wallet-summary";
 import TransactionTotal from "./financial-summary/transaction-total";
 import OfTransaction from "./financial-summary/#-of-transaction";
 import TransactionAmount from "./financial-summary/transaction-amount";
+import Commision from "./financial-summary/commision";
+import FeesSpent from "./financial-summary/fees-spent";
+import CommisionGraph from "./financial-summary/commision-graph";
+import FeesSpentGraph from "./financial-summary/fees-spent-graph";
 
 const Component = (props: HomeProps) => {
     const {
@@ -17,6 +21,10 @@ const Component = (props: HomeProps) => {
         financialFilter,
         ofTransaction,
         transactionAmount,
+        commision,
+        feesSpent,
+        commisionGraph,
+        feesSpentGraph,
         setFinancialFilter,
     } = props;
 
@@ -84,6 +92,22 @@ const Component = (props: HomeProps) => {
                     </div>
                     <div className="p-4">
                         <TransactionAmount {...transactionAmount} />
+                    </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                    <div className="p-4">
+                        <Commision {...commision} />
+                    </div>
+                    <div className="p-4">
+                        <FeesSpent {...feesSpent} />
+                    </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                    <div className="p-4">
+                        <CommisionGraph {...commisionGraph} />
+                    </div>
+                    <div className="p-4">
+                        <FeesSpentGraph {...feesSpentGraph} />
                     </div>
                 </div>
             </div>

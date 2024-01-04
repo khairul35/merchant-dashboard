@@ -49,6 +49,23 @@ const Home = () => {
         out: 9000,
     };
 
+    const commision = {
+        received: 2000,
+        pending: 150,
+    };
+
+    const feesSpent = {
+        bnb: 8.30,
+    };
+
+    const commisionGraph = {
+        received: 2000,
+    };
+
+    const feesSpentGraph = {
+        bnb: 8.3,
+    };
+
     const props: HomeProps = {
         name,
         organizationOverview,
@@ -58,8 +75,13 @@ const Home = () => {
         transactionTotal,
         ofTransaction,
         transactionAmount,
+        commision,
+        feesSpent,
+        commisionGraph,
+        feesSpentGraph,
         setFinancialFilter,
-    }
+    };
+
     return (<Component {...props} />)
 };
 
