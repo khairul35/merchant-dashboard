@@ -14,7 +14,6 @@
     "/home/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/home/page.css",
       "static/chunks/app/home/page.js"
     ],
     "/agents/page": [
