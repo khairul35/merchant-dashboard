@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from "react";
 import Component from "./index.component";
 import { HomeProps } from "./index.prop";
@@ -26,12 +28,30 @@ const Home = () => {
         locked: 4,
     }
 
+    const transactionTotal = {
+        ofTxn: {
+            in: 8000,
+            out: 1000,
+        },
+        txnAmount: {
+            in: 10000,
+            out: 9000,
+        },
+    };
+
+    const ofTransaction = {
+        ins: 8000,
+        out: 2000,
+    };
+
     const props: HomeProps = {
         name,
         organizationOverview,
         wallets,
         aggregationWalletSummary,
         financialFilter,
+        transactionTotal,
+        ofTransaction,
         setFinancialFilter,
     }
     return (<Component {...props} />)
