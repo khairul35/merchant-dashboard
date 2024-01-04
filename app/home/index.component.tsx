@@ -5,6 +5,7 @@ import Wallet from './wallet-balance';
 import AggregationWalletSummary from "./agrregation-wallet-summary";
 import TransactionTotal from "./financial-summary/transaction-total";
 import OfTransaction from "./financial-summary/#-of-transaction";
+import TransactionAmount from "./financial-summary/transaction-amount";
 
 const Component = (props: HomeProps) => {
     const {
@@ -15,6 +16,7 @@ const Component = (props: HomeProps) => {
         transactionTotal,
         financialFilter,
         ofTransaction,
+        transactionAmount,
         setFinancialFilter,
     } = props;
 
@@ -81,7 +83,7 @@ const Component = (props: HomeProps) => {
                         <OfTransaction {...ofTransaction} />
                     </div>
                     <div className="p-4">
-                        <OfTransaction {...ofTransaction} />
+                        <TransactionAmount {...transactionAmount} />
                     </div>
                 </div>
             </div>

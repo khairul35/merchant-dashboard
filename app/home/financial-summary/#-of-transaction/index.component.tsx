@@ -1,9 +1,10 @@
 import Card from "@/app/components/card";
 import { ComponentProps } from "./index.prop";
 import { formatNumberToComma } from "@/utils/formatNumberToComma";
+import LineChart from "@/app/components/chart.js/line-chart";
 
 const Component = (props: ComponentProps) => {
-    const { out, ins } = props;
+    const { out, ins, lineChartData, lineChartOptions } = props;
     return (
         <div>
             <Card>
@@ -17,6 +18,9 @@ const Component = (props: ComponentProps) => {
                         <div>Out</div>
                         <b>{formatNumberToComma(out)}</b>
                     </div>
+                </div>
+                <div>
+                    <LineChart data={lineChartData} />
                 </div>
             </Card>
         </div>

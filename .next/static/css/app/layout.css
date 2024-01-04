@@ -675,6 +675,11 @@ html {
 }
 @media (hover:hover) {
 
+  .label a:hover {
+    --tw-text-opacity: 1;
+    color: hsl(var(--bc) / var(--tw-text-opacity));
+  }
+
   .menu li > *:not(ul):not(.menu-title):not(details):active,
 .menu li > *:not(ul):not(.menu-title):not(details).active,
 .menu li > details > summary:active {
@@ -876,6 +881,18 @@ html {
     outline-offset: 2px;
   }
 }
+.label {
+  display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
 .input {
   flex-shrink: 1;
   height: 3rem;
@@ -980,6 +997,10 @@ html {
   border-top-width: 2px;
   --tw-bg-opacity: 1;
   background-color: hsl(var(--b1) / var(--tw-bg-opacity));
+}
+.btm-nav > * .label {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .btn:active:hover,
   .btn:active:focus {
@@ -1268,6 +1289,11 @@ html {
 .menu :where(li > .menu-dropdown-toggle.menu-dropdown-show):after {
   transform: rotate(225deg);
   margin-top: 0;
+}
+.mockup-phone .display {
+  overflow: hidden;
+  border-radius: 40px;
+  margin-top: -25px;
 }
 .mockup-browser .mockup-browser-toolbar .input {
   position: relative;

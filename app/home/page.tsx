@@ -44,6 +44,11 @@ const Home = () => {
         out: 2000,
     };
 
+    const transactionAmount = {
+        ins: 10000,
+        out: 9000,
+    };
+
     const props: HomeProps = {
         name,
         organizationOverview,
@@ -52,6 +57,7 @@ const Home = () => {
         financialFilter,
         transactionTotal,
         ofTransaction,
+        transactionAmount,
         setFinancialFilter,
     }
     return (<Component {...props} />)
