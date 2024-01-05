@@ -10,9 +10,7 @@ const Navigation = () => {
     const [currentPath, setCurrentPath] = useState<string>('');
 
     useEffect(() => {
-        if (typeof window !== 'undefined') {
             setCurrentPath(window.location.pathname);
-        }
     }, []);
 
     const props: NavigationProps = {
@@ -20,13 +18,11 @@ const Navigation = () => {
         path: currentPath,
         setCurrentPath,
     }
-    if (typeof window !== 'undefined') {
         return window.localStorage.getItem('isLogin') == 'true' ?
             (
                 <Component {...props} />
             )
             : (<></>)
-    }
     return (<></>)
 };
 
