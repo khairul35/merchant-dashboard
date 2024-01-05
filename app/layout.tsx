@@ -29,7 +29,7 @@ export default function RootLayout({
               style={{
                 maxHeight: 'calc(100vh - 77px)',
               }}>
-              <Navigation />
+              <span className="hidden sm:block"><Navigation /></span>
               <main className="flex-1 p-4">
                 <div
                   style={{

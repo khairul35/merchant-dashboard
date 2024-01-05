@@ -5,7 +5,7 @@ import { NavigationProps } from "./index.props";
 import { useState, useEffect } from 'react';
 import { menus } from "./menus";
 
-const Navigation = () => {
+const Navigation = (style?: React.CSSProperties, className?: string) => {
 
     const [currentPath, setCurrentPath] = useState<string>('');
 
@@ -19,6 +19,8 @@ const Navigation = () => {
         menus,
         path: currentPath,
         setCurrentPath,
+        style,
+        className,
     }
     if(typeof window == 'undefined') {
         return <></>

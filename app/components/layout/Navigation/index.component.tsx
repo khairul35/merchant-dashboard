@@ -3,10 +3,12 @@ import styles from './index.module.css';
 import Link from "next/link";
 
 const Component = (props: NavigationProps) => {
-    const { menus, path, setCurrentPath } = props;
+    const { menus, path, setCurrentPath, style, className } = props;
 
     return (
-        <nav className="w-64 min-h-screen py-4 border-r-2 border-gray-300">
+        <nav
+            className={`w-64 min-h-screen py-4 border-r-2 border-gray-300 ${className}`}
+            style={style}>
             {/* Navigation items */}
             {
                 menus.map((e: Menu) => {

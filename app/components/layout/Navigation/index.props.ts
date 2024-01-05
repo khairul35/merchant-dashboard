@@ -9,4 +9,6 @@ export interface NavigationProps {
     menus: Menu[],
     path: string;
     setCurrentPath: (path: string) => void;
+    style?: React.CSSProperties;
+    className?: string;
 }
