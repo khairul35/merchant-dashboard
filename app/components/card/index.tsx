@@ -1,14 +1,8 @@
 'use client';
 
-import React, { ReactNode } from 'react';
-
-interface CardProps {
-  children: ReactNode;
-  className?: string;
-  style?: React.CSSProperties;
-  onClick?: () => void;
-  hoverClassName?: string;
-}
+import React from 'react';
+import { CardProps, ComponentProps } from './index.prop';
+import Component from './index.component';
 
 const Card: React.FC<CardProps> = ({
   children,
@@ -33,17 +27,17 @@ const Card: React.FC<CardProps> = ({
     }
   };
 
+  const props: ComponentProps = {
+    className,
+    style,
+    onClick,
+    handleMouseEnter,
+    handleMouseLeave,
+    children
+  };
+
   return (
-    <div
-      id="card"
-      className={`rounded-lg bg-white shadow-md p-6 border border-gray-200 ${className}`}
-      style={style}
-      onClick={onClick}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      {children}
-    </div>
+    <Component {...props} />
   );
 };
 
