@@ -11,4 +11,5 @@ export interface NavigationProps {
     setCurrentPath: (path: string) => void;
     style?: React.CSSProperties;
     className?: string;
+    toggle?: () => void;
 }

@@ -4,6 +4,9 @@ import { HeaderProps } from './index.props';
 
 const Component = (props: HeaderProps) => {
     const { onLogOut, showMenu, toggleMenu } = props;
+    const navigationProp = {
+        toggle: toggleMenu,
+    };
     return (
         <div>
             <div className={styles.header}>
@@ -26,7 +29,7 @@ const Component = (props: HeaderProps) => {
                     Log Out
                 </button>
             </div>
-                    {showMenu && <Navigation />}
+                    {showMenu && <Navigation {...navigationProp} />}
         </div>
     )
 };

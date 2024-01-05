@@ -1,5 +1,9 @@
 {
-  "/home/page": "app/home/page.js",
   "/login/page": "app/login/page.js",
-  "/merchants/page": "app/merchants/page.js"
+  "/home/page": "app/home/page.js",
+  "/merchants/page": "app/merchants/page.js",
+  "/agents/page": "app/agents/page.js",
+  "/users/page": "app/users/page.js",
+  "/settings/page": "app/settings/page.js",
+  "/transactions/page": "app/transactions/page.js"
 }
