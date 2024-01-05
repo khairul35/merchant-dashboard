@@ -4,13 +4,13 @@ import styles from './index.module.css';
 import { formatNumberToComma } from "@/utils/formatNumberToComma";
 
 const Component = (props: OrganizationOverviewProps) => {
-    const { totalAgents, totalMerchants, totalUsers } = props;
+    const { totalAgents, totalMerchants, totalUsers, refreshTime } = props;
 
     return (
         <div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-4 font-medium">Organization Overview</div>
-                <div className="p-4 font-light text-xs flex justify-end items-center ">Last Updated: 12/22/2023 15:05</div>
+                <div className="p-4 font-light text-xs flex justify-end items-center ">Last Updated: {refreshTime}</div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4">
                 <div className="p-4">

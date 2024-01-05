@@ -1,17 +1,24 @@
 'use client';
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Component from "./index.component";
 import { HomeProps } from "./index.prop";
+import dayjs from 'dayjs';
 
 const Home = () => {
     const [financialFilter, setFinancialFilter] = useState<string>('ALL');
+    const [refreshTime, setRefreshTime] = useState<string>(dayjs(new Date()).format('MM/DD/YYYY HH:mm'));
+
+    useEffect(() => {
+        setRefreshTime(dayjs(new Date()).format('MM/DD/YYYY HH:mm'))
+    }, [])
 
     const name = 'Admin';
     const organizationOverview = {
         totalAgents: 10,
         totalMerchants: 2000,
-        totalUsers: 2000000
+        totalUsers: 2000000,
+        refreshTime,
     };
     
     const wallets = {
