@@ -17,6 +17,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  if (typeof window == 'undefined') {
+    return (<></>)
+  }
   return (
     <html lang="en">
       <body className={inter.className}>

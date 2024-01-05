@@ -1,5 +1,5 @@
-const Dashboard = () => {
+const Merchant = () => {
     return <></>
 };
 
-export default Dashboard;
+export default Merchant;
