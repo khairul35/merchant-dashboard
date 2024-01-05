@@ -25,7 +25,7 @@ const Home = () => {
         aggregateWallet: 10000,
         commisionWallet: 2000,
         BNBVault: 10.875,
-        walletAddress: 'Settlement Wallet Address: 0x12345678901234567890123456789123456789',
+        walletAddress: '0x12345678901234567890123456789123456789',
     }
 
     const aggregationWalletSummary = {

@@ -3,6 +3,7 @@
     margin: 5px;
     cursor: pointer;
     border-radius: 6px;
+    color: #6B6B6B;
 }
 
 .menu:hover {
@@ -15,6 +16,7 @@
 }
 
 .menuSelected {
+    fill: #FF6666;
     color: #FF6666;
     background-color: #D6D6D6;
     padding: 10px 15px;

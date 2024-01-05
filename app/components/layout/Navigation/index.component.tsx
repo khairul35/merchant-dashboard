@@ -34,7 +34,7 @@ const Component = (props: NavigationProps) => {
                             className={linkClassName}
                         >
                             {e.icon()}
-                            <span className="font">
+                            <span className="font-bold">
                                 {e.title}
                             </span>
                         </Link>

@@ -39,7 +39,7 @@ const Component = (props: HomeProps) => {
             <div className="divider"></div>
             <div className={styles.financialSummaryContainer}>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div className="p-4 font-medium">Financial Summary</div>
+                    <div className="p-4 font-semibold text-lg">Financial Summary</div>
                     <div className="p-4 font-light text-xs flex justify-end items-center ">
                         <button
                             className={financialFilter == '7D' ? styles.selectedFilterButton : styles.filterButton}

@@ -9,7 +9,7 @@ const Component = (props: TransactionTotalProps) => {
   return (
     <div>
       <Card className="m-4">
-        <div className="p-4 font-medium">Transaction Totals</div>
+        <div className="p-4 font-semibold text-lg">Transaction Totals</div>
         <table className="w-full">
           <tbody>
             <tr>
