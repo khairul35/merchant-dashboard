@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   if (typeof window == 'undefined') {
-    return (<></>)
+    return (<>test</>)
   }
   return (
     <html lang="en">
