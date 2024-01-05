@@ -15,7 +15,7 @@ const Login = () => {
 
     useEffect(() => {
         if (localStorage.getItem('isLogin') === 'true') {
-            router.push('/dashboard');
+            router.push('/home');
         }
     }, []);
 
