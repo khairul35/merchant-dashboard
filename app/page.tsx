@@ -6,7 +6,7 @@ import { NotificationProvider } from './components/notification/NotificationCont
 export default function Home() {
   if(typeof window !== 'undefined') {
     if (window.localStorage.getItem('isLogin') == 'true') {
-        window.location.href = '/dashboard';
+        window.location.href = '/home';
     }
   }
   return (

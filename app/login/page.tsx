@@ -30,7 +30,7 @@ const Login = () => {
             try {
                 await authApi.login(username, password);
                 localStorage.setItem('isLogin', 'true');
-                router.push('/dashboard');
+                router.push('/home');
                 showNotification('Successfully Logged In', 'success');
             } catch (err) {
                 showNotification('Oops.. failed to log in', 'error');
