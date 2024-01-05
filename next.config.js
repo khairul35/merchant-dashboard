@@ -1,16 +1,13 @@
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-    async generateStaticParams() {
-        return {
-            '/': { page: '/' },
-            '/login': { page: '/login' },
-            '/home': { page: '/home' },
-            '/agents': { page: '/agents' },
-            '/merchants': { page: '/merchants' },
-            '/users': { page: '/users' },
-            '/settings': { page: '/settings' },
-        };
-    },
+  output: 'export',
+  
+  // Optional configurations:
+  // trailingSlash: true,
+  // skipTrailingSlashRedirect: true,
+  // distDir: 'dist',
 }
- 
-module.exports = nextConfig
+
+module.exports = nextConfig;
