@@ -4,10 +4,11 @@ import Link from 'next/link';
 import { NotificationProvider } from './components/notification/NotificationContext.client';
 
 export default function Home() {
+  if(typeof window !== 'undefined') {
     if (window.localStorage.getItem('isLogin') == 'true') {
         window.location.href = '/dashboard';
     }
-
+  }
   return (
       <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-bg-color">
         <NotificationProvider>

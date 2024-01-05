@@ -7,8 +7,10 @@ import { HeaderProps } from "./index.props";
 const Header = () => {
 
     const onLogOut = () => {
+        if(typeof window !== 'undefined') {
             window.localStorage.setItem('isLogin', 'false');
             window.location.href = '/login';
+        }
     };
 
     useEffect(() => {
@@ -18,6 +20,9 @@ const Header = () => {
         onLogOut
     }
 
+    if(typeof window == 'undefined') {
+        return <></>
+    }
     return window.localStorage.getItem('isLogin') == 'true' ?
         (
             <Component {...props} />
