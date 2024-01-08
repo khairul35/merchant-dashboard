@@ -15,7 +15,8 @@ const Component = (props: NavigationProps) => {
                 border-r-2
                 border-gray-300
                 ${className}`}
-            style={style}>
+            style={style}
+        >
             {/* Navigation items */}
             {
                 menus.map((e: Menu) => {
@@ -33,6 +34,7 @@ const Component = (props: NavigationProps) => {
                             key={e.id}
                             className={linkClassName}
                         >
+                            {/* Wrap the Link with an anchor tag */}
                             {e.icon()}
                             <span className="font-bold">
                                 {e.title}

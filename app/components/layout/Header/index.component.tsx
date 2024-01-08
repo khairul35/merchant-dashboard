@@ -29,7 +29,7 @@ const Component = (props: HeaderProps) => {
                     Log Out
                 </button>
             </div>
-                    {showMenu && <Navigation {...navigationProp} />}
+            {showMenu && <Navigation {...navigationProp} />}
         </div>
     )
 };
