@@ -13,7 +13,7 @@ const Component = (props: ComponentProps) => {
                 </h2>
             </div>
             <div>
-                <Card className="p-0">
+                <Card padding={0}>
                     <div className="p-5">
                         <h2 className="font-medium text-l pb-5">
                             Agents List

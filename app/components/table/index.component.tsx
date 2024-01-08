@@ -26,16 +26,16 @@ const Component = (props: ComponentProps) => {
                         className="px-4 py-2 text-left border-b border-gray-200 bg-gray-100 cursor-pointer"
                         onClick={() => (column.sortable ? handleSort(column.key) : null)}
                     >
-                        <span className={column.responsiveClasses}>
-                        {column.label}
-                        {column.sortable && (
-                            <span className="ml-1">
-                            {sortKey === column.key && (
-                                <i className={`${sortDirection === 'asc' ? 'fas fa-sort-up' : 'fas fa-sort-down'}`} />
+                        <div className={`${column.center ? 'text-center align-middle' : ''} ${column.responsiveClasses}`}>
+                            {column.label}
+                            {column.sortable && (
+                                <span className="ml-1">
+                                    {sortKey === column.key && (
+                                        <i className={`${sortDirection === 'asc' ? 'fas fa-sort-up' : 'fas fa-sort-down'}`} />
+                                    )}
+                                </span>
                             )}
-                            </span>
-                        )}
-                        </span>
+                        </div>
                     </th>
                     ))}
                 </tr>
@@ -43,11 +43,11 @@ const Component = (props: ComponentProps) => {
                 <tbody className="bg-white">
                     {paginatedData.map((row, index) => (
                         <tr key={index} className="hover:bg-gray-50 cursor-pointer">
-                        {columns.map((column) => (
-                            <td key={column.key} className="px-4 py-2 border-b border-gray-200">
-                            {column.custom ? column.custom(row[column.dataIndex], row) : row[column.dataIndex]}
-                            </td>
-                        ))}
+                            {columns.map((column) => (
+                                <td key={column.key} className={`px-4 py-2 border-b border-gray-200 ${column.center ? 'text-center align-middle' : ''}`}>
+                                    {column.custom ? column.custom(row[column.dataIndex], row) : row[column.dataIndex]}
+                                </td>
+                            ))}
                         </tr>
                     ))}
                 </tbody>

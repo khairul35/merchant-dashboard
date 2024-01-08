@@ -10,6 +10,7 @@ const Card: React.FC<CardProps> = ({
   style = {},
   onClick,
   hoverClassName = '',
+  padding,
 }) => {
   const handleMouseEnter = () => {
     // Add hover effect on mouse enter if hoverClassName is provided
@@ -33,7 +34,8 @@ const Card: React.FC<CardProps> = ({
     onClick,
     handleMouseEnter,
     handleMouseLeave,
-    children
+    children,
+    padding
   };
 
   return (

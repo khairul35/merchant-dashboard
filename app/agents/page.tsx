@@ -44,35 +44,41 @@ const Agent = () => {
             label: 'Total Deposit',
             dataIndex: 'totalDeposit',
             custom: customTotalDeposit,
+            center: true,
         },
         {
             key: 'totalTxn',
             label: 'Total # of Txn',
             dataIndex: 'totalTxn',
+            center: true,
         },
         {
             key: 'totalCommision',
             label: 'Total Commision',
             dataIndex: 'totalCommision',
             custom: customTotalCommision,
+            center: true,
         },
         {
             key: 'avgDailyDeposit',
             label: 'Avg Daily Deposit',
             dataIndex: 'avgDailyDeposit',
             custom: customAvgDailyDeposit,
+            center: true,
         },
         {
             key: 'depositUnsettled',
             label: 'Deposit Unsettled',
             dataIndex: 'depositUnsettled',
             custom: customDepositUnsettled,
+            center: true,
         },
         {
             key: 'commisionPercentage',
             label: 'Commision %',
             dataIndex: 'commisionPercentage',
             custom: customCommisionPercentage,
+            center: true,
         },
     ];
 
