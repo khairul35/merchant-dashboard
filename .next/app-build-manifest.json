@@ -21,12 +21,8 @@
     "/merchants/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/merchants/page.css",
       "static/chunks/app/merchants/page.js"
-    ],
-    "/users/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/users/page.js"
     ],
     "/transactions/page": [
       "static/chunks/webpack.js",
@@ -37,6 +33,12 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/settings/page.js"
+    ],
+    "/users/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/users/page.css",
+      "static/chunks/app/users/page.js"
     ]
   }
 }

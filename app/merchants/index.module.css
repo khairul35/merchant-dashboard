@@ -1,0 +1,18 @@
+.agentContainer {
+    width: 100%;
+}
+
+.viewAllFooter {
+    background-color: #7DEFFF;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.viewAllFooter:hover {
+    background-color: #3de4fa;
+}
