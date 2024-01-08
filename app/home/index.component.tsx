@@ -31,7 +31,7 @@ const Component = (props: HomeProps) => {
     return (
         <div>
             <div className="p-2">
-                <h2 className="font-semibold text-2xl pb-5 border-b-2 border-y-gray-300">Hi { name }</h2>
+                <h2 className="font-semibold text-2xl pb-5 border-b-2 border-y-gray-300">Hello, { name }</h2>
             </div>
             <OrganizationOverview {...organizationOverview} />
             <Wallet {...wallets} />

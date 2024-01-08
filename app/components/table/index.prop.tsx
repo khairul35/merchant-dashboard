@@ -5,6 +5,7 @@ export interface TableColumn {
     dataIndex: string;
     sortable?: boolean;
     filterable?: boolean;
+    responsiveClasses?: string;
     custom?: (value: any, record: TableData) => React.ReactNode;
 }
 

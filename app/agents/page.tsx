@@ -2,29 +2,31 @@
 
 import { formatMoney } from "@/utils/formatMoney";
 import { TableColumn, TableData } from "../components/table/index.prop";
-import Table from "../components/table";
 import Component from "./index.component";
+import { ComponentProps } from "./index.prop";
 
 const Agent = () => {
     const customTotalDeposit = (value: any, record: TableData) => {
-        return (<template>{formatMoney(value, 'USD')}</template>);
+        return (<span>{formatMoney(value, 'USD')}</span>);
     };
 
     const customTotalCommision = (value: any, record: TableData) => {
-        return (<template>{formatMoney(value, 'USD')}</template>);
+        return (<span>{formatMoney(value, 'USD')}</span>);
     };
 
     const customAvgDailyDeposit = (value: any, record: TableData) => {
-        return (<template>{formatMoney(value, 'USD')}</template>);
+        return (<span>{formatMoney(value, 'USD')}</span>);
     };
 
     const customDepositUnsettled = (value: any, record: TableData) => {
-        return (<template>{formatMoney(value, 'USD')}</template>);
+        return (<span>{formatMoney(value, 'USD')}</span>);
     };
 
     const customCommisionPercentage = (value: any, record: TableData) => {
-        return (<template>{value}%</template>);
+        return (<span>{value}%</span>);
     };
+
+    const name = 'Admin'
 
     const columns: TableColumn[] = [
         {
@@ -137,8 +139,13 @@ const Agent = () => {
         columns,
     };
 
+    const componentProps: ComponentProps = {
+        tableProps,
+        name,
+    };
+
     return (
-        <Component {...tableProps} />
+        <Component {...componentProps} />
     );
 };
 

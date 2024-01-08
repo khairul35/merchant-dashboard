@@ -30,12 +30,13 @@ export default function RootLayout({
                 maxHeight: 'calc(100vh - 77px)',
               }}>
               <span className="hidden sm:block"><Navigation /></span>
-              <main className="flex-1 p-4">
+              <main className="flex-1 p-4 overflow-x-auto">
                 <div
+                  className="max-w-full"
                   style={{
                     maxHeight: 'calc(100vh - 77px)',
-                    overflow: 'auto',
                     paddingBottom: '20px',
+                    width: '100%',
                   }}
                 >
                   {children}
